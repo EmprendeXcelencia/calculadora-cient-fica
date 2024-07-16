@@ -1,0 +1,69 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #c58e8e;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    width: 350px;
+    background-color: #ffc4e6;
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: visible;
+}
+
+.display {
+    width: 93%;
+    height: 60px; /* Ajustamos la altura */
+    border: solid;
+    padding: 10px; /* Reducimos el padding para maximizar el área de texto visible */
+    font-size: 28px; /* Mantenemos el tamaño de la fuente más grande para visibilidad */
+    text-align: right;
+    background-color: #ff9dc2;
+    color: #ffc4e6;
+    overflow-x: auto; /* Permitir desplazamiento horizontal */
+    white-space: nowrap; /* Evitamos el salto de línea */
+    text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto es demasiado largo */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+button {
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #c7687f;
+    color: rgb(235, 171, 221);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff93d2;
+}
+
+button:nth-child(4n) {
+    background-color: #ee9089;
+}
+
+button:nth-child(4n):hover {
+    background-color: #ff9cb5;
+}
+
+button:nth-child(4n-3) {
+    background-color: #f895b3;
+}
+
+button:nth-child(4n-3):hover {
+    background-color: #f770a4;
+}
